@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>CV</title>
 </head>
 
 <body>
@@ -16,10 +16,11 @@
 	Alex Olesik#9703;
 	+375 33 327 71 90;
 	<h2>About me</h2>
-	I’m 22 years old and i’m en engineer. In 2020 I graduated from the mechanical engineering faculty of BNTU. My goal is
-	to become a web developer and become a demanded specialist.
+	<p>I’m 22 years old and i’m en engineer. In 2020 I graduated from the mechanical engineering faculty of BNTU. My goal
+		is
+		to become a web developer and become a demanded specialist.</p>
 
-	My strengths:
+	<p>My strengths:
 	<ul>
 		<li>engineering education;</li>
 		<li>funny;</li>
@@ -27,6 +28,7 @@
 		<li>I can work in a team;</li>
 		<li>purposeful (hopefully);</li>
 	</ul>
+	</p>
 
 
 	<h2>My skills:</h2>
@@ -40,22 +42,32 @@
 
 
 	<h2>Code examples:</h2>
-	//Simple, given a string of words, return the length of the shortest word(s).
-	//String will never be empty and you do not need to account for different data types.
+	<p>
+		<code>
+			//Simple, given a string of words, return the length of the shortest word(s).</br>
+			//String will never be empty and you do not need to account for different data types.</br>
+		</br>
+			function findShort(s) {</br>
+			let arr = s.split(' ');</br>
+		</br>
+			let Lengths = arr.map(items => items.length);</br>
+		</br>
+			let compare = function (a, b) {</br>
+			if (a > b) return 1;</br>
+			if (a == b) return 0;</br>
+			if (a < b) return -1; } </br>
+		</br>
+			Lengths.sort(compare); </br>
+			return Lengths[0];</br>
+			} </br>
+			</code>
+	</p>
 
-	function findShort(s) {
-	let arr = s.split(' ');
-
-	let Lengths = arr.map(items => items.length);
-
-	let compare = function (a, b) {
-	if (a > b) return 1;
-	if (a == b) return 0;
-	if (a < b) return -1; } Lengths.sort(compare); return Lengths[0] } <h2>Experience</h2>
-		<h2>Education</h2>
-		I have been self-educating for the last year. Completed interactive courses HTMLAcademy.
-		<h2>English level</h2>
-		My english level is A2 - A2+. I studied at International House.
+	<h2>Experience</h2>
+	<h2>Education</h2>
+	<p>I have been self-educating for the last year. Completed interactive courses HTMLAcademy.</p>
+	<h2>English level</h2>
+	<p>My english level is A2 - A2+. I studied at International House.</p>
 </body>
 
 </html>

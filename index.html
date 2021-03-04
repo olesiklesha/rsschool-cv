@@ -5,7 +5,8 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;400;700;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;400;800;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/iconsfont.css">
 	<link rel="stylesheet" href="css/style.css">
 	<title>CV</title>
 </head>
@@ -32,9 +33,9 @@
 			<section class="contacts">
 				<h2 class="title">Contacts:</h2>
 				<ul>
-					<li>Email;</li>
-					<li>Alex Olesik#9703;</li>
-					<li>+375 33 327 71 90;</li>
+					<li class="_icon-mail">olesikwork@gmail.com;</li>
+					<li class="_icon-discord">Alex Olesik#9703;</li>
+					<li class="_icon-telegram">+375 33 327 71 90;</li>
 				</ul>
 			</section>
 		</div>
@@ -69,7 +70,7 @@
 
 			<section class="english">
 				<h2 class="title point">English level</h2>
-				<p>My english level is A2 - A2+. I studied at International House.</p>
+				<p>My english level is <strong>A2+</strong>. I studied at International House.</p>
 			</section>
 		</div>
 
@@ -92,25 +93,22 @@
 					Simple, given a string of words, return the length of the shortest word(s).
 					String will never be empty and you do not need to account for different data types.
 				</p>
-				<p>
-
+				<p class="code_exemple">
 					<code>
-
-</br>
-	function findShort(s) {</br>
-	let arr = s.split(' ');</br>
-</br>
-	let Lengths = arr.map(items => items.length);</br>
-</br>
-	let compare = function (a, b) {</br>
-	if (a > b) return 1;</br>
-	if (a == b) return 0;</br>
-	if (a < b) return -1; } </br>
-</br>
-	Lengths.sort(compare); </br>
-	return Lengths[0];</br>
-	} </br>
-	</code>
+						function findShort(s) {</br>
+						let arr = s.split(' ');</br>
+						</br>
+						let Lengths = arr.map(items => items.length);</br>
+						</br>
+						let compare = function (a, b) {</br>
+						if (a > b) return 1;</br>
+						if (a == b) return 0;</br>
+						if (a < b) return -1; } </br>
+						</br>
+						Lengths.sort(compare); </br>
+						return Lengths[0];</br>
+						} </br>
+					</code>
 				</p>
 			</section>
 		</div>

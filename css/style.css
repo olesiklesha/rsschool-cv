@@ -114,4 +114,15 @@ footer {
 	background-color: #2251b2;
 	border-top: 2px solid black;
 	height: 100px;
+	padding-top: 20px;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 30px;
+	font-weight: 900;
+	color: white;
+	letter-spacing: 5px;
 }

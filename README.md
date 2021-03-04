@@ -1,2 +1,2 @@
 
-https://olesiklesha.github.io/rsschool-cv/cv
+https://olesiklesha.github.io/rsschool-cv/

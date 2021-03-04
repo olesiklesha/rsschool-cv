@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;400;800;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/iconsfont.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>CV</title>
+</head>
+
+<body>
+	<div class="head-clr"></div>
+
+	<div class="top">
+
+		<figure>
+			<img src="img/IMG_20200711_223839.jpg" alt="It's me" width="280" height="350">
+		</figure>
+
+
+		<div class="right">
+			<div class="main_title">
+				<header>
+					<p>Front-end student</p>
+					<h1>Olesik Alexey</h1>
+				</header>
+			</div>
+
+
+			<section class="contacts">
+				<h2 class="title">Contacts:</h2>
+				<ul>
+					<li class="_icon-mail">olesikwork@gmail.com;</li>
+					<li class="_icon-discord">Alex Olesik#9703;</li>
+					<li class="_icon-telegram">+375 33 327 71 90;</li>
+				</ul>
+			</section>
+		</div>
+
+	</div>
+
+	<main>
+		<div class="middle">
+
+			<div class="mid_left">
+				<section class="profile">
+					<h2 class="title point">About me</h2>
+					<p>I’m 22 years old and i’m en engineer. In 2020 I graduated from the mechanical engineering faculty of
+						BNTU.
+						My
+						goal is to become a web developer and become a demanded specialist.</p>
+
+					<p>My strengths:</p>
+					<ul>
+						<li>engineering education;</li>
+						<li>funny;</li>
+						<li>communicative;</li>
+						<li>I can work in a team;</li>
+						<li>purposeful (hopefully);</li>
+					</ul>
+
+				</section>
+
+				<section class="education">
+					<h2 class="title point">Education</h2>
+					<p>I have been self-educating for the last year. Completed interactive courses HTMLAcademy.</p>
+				</section>
+
+				<section class="english">
+					<h2 class="title point">English level</h2>
+					<p>My english level is <strong>A2+</strong>. I studied at International House.</p>
+				</section>
+			</div>
+
+
+			<div class="mid_right">
+				<section class="skills">
+					<h2 class="title point">My skills:</h2>
+					<ul>
+						<li>JS + (HTML5, CSS3);</li>
+						<li>Git;</li>
+						<li>BEM;</li>
+						<li>C++ (taught at the university);</li>
+						<li>C# (taught at the university);</li>
+					</ul>
+				</section>
+
+				<section class="exemple">
+					<h2 class="title point">Code examples:</h2>
+					<p>
+						Simple, given a string of words, return the length of the shortest word(s).
+						String will never be empty and you do not need to account for different data types.
+					</p>
+					<p class="code_exemple">
+						<code>
+							function findShort(s) {<br>
+							let arr = s.split(' ');<br>
+							<br>
+							let Lengths = arr.map(items => items.length);<br>
+							<br>
+							let compare = function (a, b) {<br>
+							if (a > b) return 1;<br>
+							if (a == b) return 0;<br>
+							if (a &lt; b) return -1; } <br>
+							<br>
+							Lengths.sort(compare); <br>
+							return Lengths[0];<br>
+							} <br>
+						</code>
+					</p>
+				</section>
+			</div>
+
+
+		</div>
+	</main>
+
+
+	<footer>
+		<div class="container footer">
+			<a href="https://rs.school/js/" target="_blank"><img src="img/rs_school_js.svg" alt="rss logo" width="100"
+					height="75"></a>
+			<p>2021</p>
+			<a href="https://github.com/olesiklesha" target="_blank"><img src="img/github.svg" alt="gitHub logo" width="75"
+					height="75"></a>
+		</div>
+	</footer>
+</body>
+
+</html>

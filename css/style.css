@@ -1,0 +1,128 @@
+body {
+	font-family: "Gothic A1";
+	font-weight: 300;
+	padding: 0;
+	margin: 0;
+}
+
+.head-clr {
+	width: 100%;
+	height: 225px;
+	border-bottom: 2px solid black;
+	background-color: #2251b2;
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.container {
+	width: 980px;
+	margin: 0 auto;
+	padding: 0 10px;
+
+}
+
+.point {
+
+	border-top: 2px solid black;
+	padding-top: 20px;
+}
+
+.title {
+	text-transform: uppercase;
+	margin: 0;
+	font-size: 20px;
+	
+}
+
+.main_title {
+	font-weight: 800;
+}
+
+.contacts ul {
+	list-style: none;
+	padding: 0;
+}
+
+
+h1 {
+	color: white;
+	font-family: "Gothic A1";
+	font-weight: 900;
+	text-transform: uppercase;
+	font-size: 45px;
+	letter-spacing: 5px;
+	margin: 0;
+}
+
+.top {
+	width: 900px;
+	margin: 0 auto;
+	padding: 0;
+	
+	display: flex;
+	position: relative;
+	z-index: 10;
+	top: 25px;
+}
+
+.right {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-left: 35px;
+}
+
+.main_title {
+	width: 300px;
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+	color: white;
+}
+
+.middle {
+	width: 900px;
+	margin: 25px auto;
+	padding: 0;
+	display: flex;
+	
+}
+
+.middle section {
+	padding-bottom: 30px;
+}
+
+.mid_left {
+	width: 280px;
+	flex-grow: 1;
+	margin-left: 40px;
+}
+
+.mid_right {
+	width: 300px;
+	flex-grow: 100;
+	margin-left: 80px;
+}
+
+.code_exemple{
+	padding-left: 15px;
+}
+
+footer {
+	background-color: #2251b2;
+	border-top: 2px solid black;
+	height: 100px;
+	padding-top: 20px;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 30px;
+	font-weight: 900;
+	color: white;
+	letter-spacing: 3px;
+}

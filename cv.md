@@ -17,8 +17,8 @@ __My strengths__:
 ## My skills: 
 * JS + (HTML5, CSS3);
 * Sass;
-* TypeScript(entry level);
-* Webpack(entry level);
+* TypeScript (entry level);
+* Webpack (entry level);
 * Git; 
 * BEM; 
 * C++ (learned at the university); 
@@ -56,7 +56,7 @@ function findOutlier(integers){
 * [Venom-2](https://olesiklesha.github.io/Venom-2/);
 
 ## Education 
-I've been self-educating for the last 1.5 years. Completed interactive courses HTMLAcademy. I started taking the RSS course (last set).
+I've been self-educating for the last 1.5 years. Completed interactive courses HTMLAcademy. I tried taking the RSS course (the last set).
 
 ## English level 
 My english level is A2 - A2+. I'm studying at [International House](https://www.ih.by/).

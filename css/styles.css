@@ -248,7 +248,7 @@ code {
 .code-ex {
   margin: 0;
   max-width: 100%;
-  font-size: 0.75em;
+  font-size: 12px;
   background-color: rgba(219, 219, 219, 0.205);
 }
 

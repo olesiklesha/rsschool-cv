@@ -77,8 +77,9 @@ body {
   font-style: italic;
 }
 
-.fig {
+#fig {
   margin: 0;
+  padding: 0;
 }
 
 .section-header {

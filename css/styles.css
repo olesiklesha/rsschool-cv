@@ -77,6 +77,10 @@ body {
   font-style: italic;
 }
 
+.fig {
+  margin: 0;
+}
+
 .section-header {
   padding-top: 40px;
   display: -webkit-box;

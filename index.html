@@ -10,6 +10,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
   <title>CV</title>
 </head>
 
@@ -21,8 +24,8 @@
         <ul class="nav">
           <li class="nav__item"><a href="#" class="nav__link">About me</a></li>
           <li class="nav__item"><a href="#" class="nav__link">Skills</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Projects</a></li>
           <li class="nav__item"><a href="#" class="nav__link">Code exemple</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Projects</a></li>
           <li class="nav__item"><a href="#" class="nav__link">Education</a></li>
           <li class="nav__item"><a href="#" class="nav__link">Video</a></li>
         </ul>
@@ -59,18 +62,59 @@
     </div>
   </section>
 
-  <div class="section info wrapper">
+  <section class="info wrapper">
     <div class="container">
-      <h3 class="title--min">Hi, <span class="accent">I’m Alex</span>. Nice to meet you.</h3>
+      <h3 class="title--min">Hi, my name's <span class="accent">Alex</span>. Nice to meet you.</h3>
       <p class="text">
         Start programming in 2019. Front-end developer with technical education. In 2020 I graduated from the mechanical
-        engineering faculty of BNTU.
-
-        During my studies at the university, I learned to quickly assimilate information, sleep little,
-        work in stressful situations
-        I live and work in Minsk. I like to watch football, listen to music and play table games.</p>
+        engineering faculty of BNTU. During my studies at the university, I learned to quickly assimilate information,
+        sleep little,
+        work in stressful situations. I live and work in Minsk. I like to watch football, listen to music and play table
+        games.</p>
     </div>
-  </div>
+  </section>
+
+  <section class="skills wrapper">
+    <div class="container--l">
+      <h2 class="title">Skills</h2>
+      <ul class="skills-container">
+        <li class="skill">HTML 5</li>
+        <li class="skill">CSS 3</li>
+        <li class="skill">SCSS</li>
+        <li class="skill">Java Script</li>
+        <li class="skill">Git&Github</li>
+        <li class="skill">Webpack</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="exemple wrapper">
+    <div class="container--l">
+      <h2 class="title">Code exemple</h2>
+      <p class="text">The rgb function is incomplete. Complete it so that passing in RGB decimal values will result in a
+        hexadecimal representation being returned. Valid decimal values for RGB are 0 - 255. Any values that fall out of
+        that range must be rounded to the closest valid value.
+
+        Note: Your answer should always be 6 characters long, the shorthand with 3 will not work here.</p>
+      <pre class="code-container"><code>
+  function rgb(r, g, b){
+    let result = '';
+  
+    for (let i = 0; i &lt; arguments.length; i++) {
+      if (arguments[i] &gt; 255) arguments[i] = 255;
+      if (arguments[i] &lt; 0) arguments[i] = 0;
+    
+      arguments[i].toString(16).length == 2 ? result+=arguments[i].toString(16) : result+= 0 + arguments[i].toString(16);
+    }
+
+    return result.toUpperCase();
+  }
+    </code></pre>
+    </div>
+  </section>
+
+
+  </section>
 </body>
 
 </html>

@@ -36,22 +36,30 @@ body {
   max-width: 930px;
   margin: 0 auto;
   padding: 0 10px;
+  
+  &--l {
+    max-width: 1500px;
+  }
 }
 
 .title {
-  margin: $small-padd;
+  margin: 0;
+  padding-top: $small-padd;
+  padding-bottom: $small-padd;
   font-weight: 800;
   font-size: 26px;
   line-height: 32px;
   color: $main-color;
   text-transform: uppercase;
   text-align: center;
+  border-bottom: 2px solid $border-color;
   
   &--min {
     text-align: center;
     margin: 0;
     text-transform: none;
     margin-bottom: 30px;
+    border: none;
   }
 }
 // ===== / COMMON =====
@@ -211,4 +219,80 @@ body {
   color: $color-accent;
 }
 // ===== / INFO =====
+
+// ===== SKILLS =====
+.skills {
+  .container--l {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+  }
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0 10px;
+  list-style: none;
+  margin: $big-padd auto;
+  max-width: 1100px;
+  row-gap: 20px;
+}
+
+.skill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 47%;
+  height: 65px;
+  background-color: $color-accent;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 30px;
+  color: $border-color;
+  border-radius: 45px;
+
+  //margin-bottom: 20px;
+}
+
+// ===== / SKILLS =====
+
+// ===== EXEMPLE =====
+.exemple {
+  background-color: $bg-color;
+
+  .container--l {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+    padding-bottom: $big-padd;
+  }
+
+  .text {
+    margin: $small-padd auto;
+    text-align: left;
+    max-width: 1100px;
+    padding: 0 10px;
+
+  }
+}
+.code-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+// ===== / EXEMPLE =====
+
+// ===== PROJECTS =====
+.projects {
+  .container--l {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+  }
+}
+// ===== / PROJECTS =====
 

@@ -22,14 +22,21 @@ body {
   padding: 0 10px;
 }
 
+.container--l {
+  max-width: 1500px;
+}
+
 .title {
-  margin: var(--padd-s);
+  margin: 0;
+  padding-top: var(--padd-s);
+  padding-bottom: var(--padd-s);
   font-weight: 800;
   font-size: 26px;
   line-height: 32px;
   color: var(--color-main);
   text-transform: uppercase;
   text-align: center;
+  border-bottom: 2px solid var(--border-color);
 }
 
 .title--min {
@@ -37,6 +44,7 @@ body {
   margin: 0;
   text-transform: none;
   margin-bottom: 30px;
+  border: none;
 }
 
 .header {
@@ -200,5 +208,78 @@ body {
 
 .accent {
   color: var(--accent);
+}
+
+.skills .container--l {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+}
+
+.skills-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0;
+  padding: 0 10px;
+  list-style: none;
+  margin: var(--padd-xl) auto;
+  max-width: 1100px;
+  row-gap: 20px;
+}
+
+.skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 47%;
+  height: 65px;
+  background-color: var(--accent);
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--border-color);
+  border-radius: 45px;
+}
+
+.exemple {
+  background-color: var(--bg-color);
+}
+
+.exemple .container--l {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+  padding-bottom: var(--padd-xl);
+}
+
+.exemple .text {
+  margin: var(--padd-s) auto;
+  text-align: left;
+  max-width: 1100px;
+  padding: 0 10px;
+}
+
+.code-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.projects .container--l {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
 }
 /*# sourceMappingURL=style.css.map */

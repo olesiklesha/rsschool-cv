@@ -65,10 +65,6 @@ body {
   color: var(--color-main);
 }
 
-.main-nav {
-  width: 60%;
-}
-
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -83,6 +79,10 @@ body {
 
 .nav__item {
   cursor: pointer;
+}
+
+.nav__item + .nav__item {
+  margin-left: 30px;
 }
 
 .nav__link {
@@ -104,7 +104,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: var(--padd-xl) 0;
+  padding-top: var(--padd-xl);
+  padding-bottom: var(--padd-xl);
 }
 
 .main-title {
@@ -114,6 +115,8 @@ body {
   font-size: 48px;
   line-height: 59px;
   text-transform: capitalize;
+  color: var(--color-main);
+  text-align: center;
 }
 
 .text {
@@ -122,6 +125,7 @@ body {
   font-size: 17px;
   line-height: 30px;
   color: var(--text-color);
+  text-align: center;
 }
 
 .photo {

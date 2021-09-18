@@ -77,7 +77,7 @@ body {
 }
 
 .main-nav {
-  width: 60%;
+ 
 }
 
 .nav {
@@ -89,6 +89,10 @@ body {
 
   &__item {
     cursor: pointer;
+    
+    & + & {
+      margin-left: 30px;
+    }
   }
 
   &__link {
@@ -107,7 +111,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: $big-padd 0;
+    padding-top: $big-padd;
+    padding-bottom: $big-padd;
   }
 }
 
@@ -118,6 +123,8 @@ body {
   font-size: 48px;
   line-height: 59px;
   text-transform: capitalize;
+  color: $main-color;
+  text-align: center;
 }
 
 .text {
@@ -126,6 +133,7 @@ body {
   font-size: 17px;
   line-height: 30px;
   color: $color-p;
+  text-align: center;
 }
 
 .photo {

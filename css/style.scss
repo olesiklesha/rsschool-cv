@@ -1,0 +1,84 @@
+// ===== VARIABLES =====
+html.light {
+  --color-main: #141C3A;
+  --padd: 40px;
+  --border-color: #E5EBF2;
+}
+
+html.dark {
+
+}
+
+$main-color: var(--color-main);
+$small-padd: var(--padd);
+$border-color: var(--border-color);
+
+// ===== / VARIABLES =====
+
+// ===== COMMON =====
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.container {
+  max-width: 930px;
+  margin: 0 auto;
+}
+// ===== / COMMON =====
+
+// ===== HEADER =====
+.header {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: $small-padd;
+    padding-bottom: $small-padd;
+  }
+
+  border: 2px solid $border-color;
+}
+
+.name {
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 32px;
+  color: $main-color;
+}
+
+.main-nav {
+  width: 60%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &__item {
+    cursor: pointer;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 30px;
+/* or 176% */
+
+// display: flex;
+// align-items: center;
+
+/* blue 1 */
+
+    color: #141C3A;
+  }
+}
+// ===== / HEADER =====
+

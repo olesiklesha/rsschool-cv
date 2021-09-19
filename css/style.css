@@ -285,23 +285,45 @@ body {
 
 .projects-container {
   margin: 0 auto;
-  margin-top: var(--padd-s);
-  width: 1100px;
+  margin-top: var(--padd-xl);
+  margin-bottom: var(--padd-xl);
+  max-width: 1100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 40px;
 }
 
 .project {
   position: relative;
+  text-decoration: none;
   width: 80%;
   height: 480px;
+  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+}
+
+.project:nth-of-type(2n) {
+  margin-left: 20%;
 }
 
 .project:first-of-type {
   background-image: url(../img/museum.JPG);
-  background-position: center;
-  background-size: cover;
+}
+
+.project:nth-of-type(2) {
+  background-image: url(../img/whildlife.JPG);
+}
+
+.project:nth-of-type(3) {
+  background-image: url(../img/zoo.JPG);
+}
+
+.project:nth-of-type(4) {
+  background-image: url(../img/player.JPG);
 }
 
 .project::before {
@@ -310,14 +332,197 @@ body {
   display: block;
   width: 100%;
   height: 100%;
+  border-radius: 10px;
   background-color: var(--accent);
   opacity: 0.3;
-  -webkit-filter: sepia(0.5);
-          filter: sepia(0.5);
+  -webkit-filter: sepia(0.35);
+          filter: sepia(0.35);
+  z-index: 1;
+}
+
+.project-info {
+  position: absolute;
+  z-index: 2;
+  max-width: 60%;
+  bottom: 70px;
+  left: 70px;
 }
 
 .stack {
   color: var(--accent);
+  font-size: 25px;
+  font-style: italic;
+}
+
+.project-name {
+  margin: 0;
+  color: var(--bg-color);
+  font-size: 40px;
+}
+
+.description {
+  color: var(--bg-color);
+}
+
+.education {
+  background-color: var(--bg-color);
+}
+
+.edu-container {
+  margin-top: var(--padd-xl);
+  padding-bottom: var(--padd-xl);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.edu-container__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 32%;
+}
+
+.edu-container__item .text {
+  text-align: left;
+}
+
+.edu-container__item .text a {
+  color: inherit;
+}
+
+.edu-container__item .text a:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: var(--accent);
+}
+
+.date {
+  margin: 0;
+  margin-bottom: 15px;
+  font-weight: 300;
   font-size: 20px;
+  line-height: 30px;
+  color: var(--color-main);
+}
+
+.place {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--color-main);
+  text-transform: uppercase;
+}
+
+.line-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.dot {
+  display: block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: var(--accent);
+  margin-right: 30px;
+}
+
+.line {
+  display: block;
+  height: 3px;
+  background-color: var(--border-color);
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.video .container--l {
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.video-container {
+  margin-top: var(--padd-s);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: var(--padd-xl);
+  max-width: 90%;
+}
+
+.vid {
+  width: 100%;
+  height: 700px;
+}
+
+.footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: var(--padd-s);
+}
+
+.copyright {
+  font-size: 20px;
+  color: var(--color-main);
+}
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gh {
+  margin-right: 30px;
+}
+
+.gh svg {
+  width: 60px;
+  height: 60px;
+}
+
+.gh svg g {
+  fill: var(--color-main);
+}
+
+.gh:hover svg g {
+  -webkit-transition: .3s;
+  transition: .3s;
+  fill: var(--accent);
+}
+
+.rss svg {
+  width: 180px;
+  height: 60px;
+}
+
+.rss svg path {
+  fill: var(--color-main);
+}
+
+.rss:hover svg path {
+  -webkit-transition: .3s;
+  transition: .3s;
+  fill: var(--accent);
 }
 /*# sourceMappingURL=style.css.map */

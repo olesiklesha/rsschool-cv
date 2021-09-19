@@ -670,7 +670,7 @@ body {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 586px) {
   .contacts {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

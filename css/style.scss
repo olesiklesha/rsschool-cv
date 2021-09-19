@@ -173,17 +173,19 @@ body {
   color: $color-p;
   text-align: center;
 }
-
-.photo {
+.ph {
+  width: 250px;
+  height: 250px;
   margin: 0;
   margin-top: $small-padd;
   margin-bottom: 25px;
+}
+
+.photo {
+  margin: 0;
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  background-image: url(../img/IMG_20200711_223839.jpg);
-  background-size: cover;
-  background-position: 50% 40%;
 }
 
 .contacts {

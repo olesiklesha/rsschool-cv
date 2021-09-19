@@ -20,20 +20,41 @@
   <header class="header wrapper">
     <div class="container">
       <div class="name">Alex Olesik</div>
-      <nav class="main-nav">
-        <ul class="nav">
-          <li class="nav__item"><a href="#" class="nav__link">About me</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Skills</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Code exemple</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Projects</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Education</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Video</a></li>
-        </ul>
-      </nav>
+      <div class="navbar">
+        <button class="close-menu">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1L15 15M1 15L15 1" stroke="black" />
+          </svg>
+        </button>
+        <nav class="main-nav">
+          <ul class="nav">
+            <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+            <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+            <li class="nav__item"><a href="#exemple" class="nav__link">Code exemple</a></li>
+            <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+            <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+            <li class="nav__item"><a href="#video" class="nav__link">Video</a></li>
+          </ul>
+        </nav>
+      </div>
+      <button class="menu-button">
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M0.937476 9.37501H29.0624C29.58 9.37501 29.9999 8.95498 29.9999 8.43754C29.9999 7.92002 29.5799 7.50006 29.0624 7.50006H0.937476C0.419955 7.50006 0 7.92009 0 8.43754C0 8.95498 0.420033 9.37501 0.937476 9.37501Z"
+            fill="black" />
+          <path
+            d="M29.0624 14.0626H0.937476C0.419955 14.0626 0 14.4826 0 15C0 15.5175 0.420033 15.9375 0.937476 15.9375H29.0624C29.58 15.9375 29.9999 15.5175 29.9999 15C29.9999 14.4826 29.58 14.0626 29.0624 14.0626Z"
+            fill="black" />
+          <path
+            d="M29.0625 20.625H10.3125C9.79495 20.625 9.375 21.0451 9.375 21.5625C9.375 22.08 9.79503 22.5 10.3125 22.5H29.0625C29.58 22.5 29.9999 22.0799 29.9999 21.5625C30 21.045 29.58 20.625 29.0625 20.625Z"
+            fill="black" />
+        </svg>
+
+      </button>
     </div>
   </header>
 
-  <section class="about wrapper">
+  <section id="about" class="about wrapper">
     <div class="container">
       <h1 class="main-title">front-end developer</h1>
       <p class="text">Purposeful front-end developer with a passion for thoughtful design, collaboration and
@@ -74,7 +95,7 @@
     </div>
   </section>
 
-  <section class="skills wrapper">
+  <section id="skills" class="skills wrapper">
     <div class="container--l">
       <h2 class="title">Skills</h2>
       <ul class="skills-container">
@@ -88,7 +109,7 @@
     </div>
   </section>
 
-  <section class="exemple wrapper">
+  <section id="exemple" class="exemple wrapper">
     <div class="container--l">
       <h2 class="title">Code exemple</h2>
       <p class="text">The rgb function is incomplete. Complete it so that passing in RGB decimal values will result in a
@@ -113,11 +134,12 @@
     </div>
   </section>
 
-  <section class="projects wrapper">
+  <section id="projects" class="projects wrapper">
     <div class="container--l">
       <h2 class="title">Projects</h2>
       <div class="projects-container">
-        <a href="" class="project">
+        <a href="https://rolling-scopes-school.github.io/olesiklesha-JSFEPRESCHOOL/museum/" target="_blank"
+          class="project">
           <div class="project-info">
             <div class="stack">HTML, SCSS, JS</div>
             <h3 class="project-name">Museum</h3>
@@ -125,14 +147,16 @@
               being finalized.</p>
           </div>
         </a>
-        <a href="" class="project">
+        <a href="https://rolling-scopes-school.github.io/olesiklesha-JSFE2021Q1/Wildlife/" target="_blank"
+          class="project">
           <div class="project-info">
             <div class="stack">HTML, CSS</div>
             <h3 class="project-name">Wildlife</h3>
             <p class="description">A landing page about wildlife. Made with flexbox layout.</p>
           </div>
         </a>
-        <a href="" class="project">
+        <a href="https://rolling-scopes-school.github.io/olesiklesha-JSFE2021Q1/online-zoo/" target="_blank"
+          class="project">
           <div class="project-info">
             <div class="stack">HTML, SCSS, JS</div>
             <h3 class="project-name">Online zoo</h3>
@@ -140,7 +164,8 @@
               layout, responsive.</p>
           </div>
         </a>
-        <a href="" class="project">
+        <a href="https://rolling-scopes-school.github.io/olesiklesha-JSFEPRESCHOOL/custom-video-player/" target="_blank"
+          class="project">
           <div class="project-info">
             <div class="stack">HTML, CSS, JS</div>
             <h3 class="project-name">Custom video player</h3>
@@ -152,7 +177,7 @@
     </div>
   </section>
 
-  <section class="education wrapper">
+  <section id="education" class="education wrapper">
     <div class="container container--l">
       <h2 class="title">Education</h2>
       <div class="edu-container">
@@ -187,7 +212,7 @@
     </div>
   </section>
 
-  <section class="video wrapper">
+  <section id="video" class="video wrapper">
     <div class="container--l">
       <h2 class="title">Video</h2>
       <div class="video-container">
@@ -203,7 +228,7 @@
     <div class="container container--l">
       <p class="copyright">&copy; 2021 by Alex Olesik</p>
       <div class="links">
-        <a href="" class="links__item gh">
+        <a href="https://github.com/olesiklesha" target="_blank" class="links__item gh">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
             <g fill="#181616">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -216,7 +241,7 @@
                 d="M24.855 108.302h-10.7a.5.5 0 0 0-.5.5v5.232a.5.5 0 0 0 .5.5h4.173v6.5s-.937.32-3.53.32c-3.056 0-7.327-1.116-7.327-10.508 0-9.393 4.448-10.63 8.624-10.63 3.614 0 5.17.636 6.162.943.31.094.6-.216.6-.492l1.193-5.055a.468.468 0 0 0-.192-.39c-.403-.288-2.857-1.66-9.058-1.66-7.144 0-14.472 3.038-14.472 17.65 0 14.61 8.39 16.787 15.46 16.787 5.854 0 9.405-2.502 9.405-2.502.146-.08.162-.285.162-.38v-16.316a.5.5 0 0 0-.5-.5zM79.506 94.81H73.48a.5.5 0 0 0-.498.503l.002 11.644h-9.392V95.313a.5.5 0 0 0-.497-.503H57.07a.5.5 0 0 0-.498.503v31.53c0 .277.224.503.498.503h6.025a.5.5 0 0 0 .497-.504v-13.486h9.392l-.016 13.486c0 .278.224.504.5.504h6.038a.5.5 0 0 0 .497-.504v-31.53c0-.278-.22-.502-.497-.502zM32.34 95.527c-2.144 0-3.884 1.753-3.884 3.923 0 2.167 1.74 3.925 3.884 3.925 2.146 0 3.885-1.758 3.885-3.925 0-2.17-1.74-3.923-3.885-3.923zM35.296 105.135H29.29c-.276 0-.522.284-.522.56v20.852c0 .613.382.795.876.795h5.41c.595 0 .74-.292.74-.805v-6.346-14.553a.5.5 0 0 0-.498-.502zM102.902 105.182h-5.98a.5.5 0 0 0-.496.504v15.46s-1.52 1.11-3.675 1.11-2.727-.977-2.727-3.088v-13.482a.5.5 0 0 0-.497-.504h-6.068a.502.502 0 0 0-.498.504v14.502c0 6.27 3.495 7.804 8.302 7.804 3.944 0 7.124-2.18 7.124-2.18s.15 1.15.22 1.285c.07.136.247.273.44.273l3.86-.017a.502.502 0 0 0 .5-.504l-.003-21.166a.504.504 0 0 0-.5-.502zM119.244 104.474c-3.396 0-5.706 1.515-5.706 1.515V95.312a.5.5 0 0 0-.497-.503H107a.5.5 0 0 0-.5.503v31.53a.5.5 0 0 0 .5.503h4.192c.19 0 .332-.097.437-.268.103-.17.254-1.454.254-1.454s2.47 2.34 7.148 2.34c5.49 0 8.64-2.784 8.64-12.502s-5.03-10.988-8.428-10.988zm-2.36 17.764c-2.073-.063-3.48-1.004-3.48-1.004v-9.985s1.388-.85 3.09-1.004c2.153-.193 4.228.458 4.228 5.594 0 5.417-.935 6.486-3.837 6.398zM53.195 122.12c-.263 0-.937.107-1.63.107-2.22 0-2.973-1.032-2.973-2.368v-8.866h4.52a.5.5 0 0 0 .5-.504v-4.856a.5.5 0 0 0-.5-.502h-4.52l-.007-5.97c0-.227-.116-.34-.378-.34h-6.16c-.238 0-.367.106-.367.335v6.17s-3.087.745-3.295.805a.5.5 0 0 0-.36.48v3.877a.5.5 0 0 0 .497.503h3.158v9.328c0 6.93 4.86 7.61 8.14 7.61 1.497 0 3.29-.48 3.586-.59.18-.067.283-.252.283-.453l.004-4.265a.51.51 0 0 0-.5-.502z" />
             </g>
           </svg></a>
-        <a href="" class="links__item rss">
+        <a href="https://rs.school" target="_blank" class="links__item rss">
           <svg class="rsschool" width="80" height="29" viewBox="0 0 80 29" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
@@ -241,6 +266,7 @@
     </div>
   </footer>
 
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

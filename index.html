@@ -160,11 +160,11 @@
         <pre class="code-container"><code>
   function rgb(r, g, b){
     let result = '';
-  
+
     for (let i = 0; i &lt; arguments.length; i++) {
       if (arguments[i] &gt; 255) arguments[i] = 255;
       if (arguments[i] &lt; 0) arguments[i] = 0;
-    
+
       arguments[i].toString(16).length == 2 ? result+=arguments[i].toString(16) : result+= 0 + arguments[i].toString(16);
     }
 
@@ -281,7 +281,7 @@
         </div>
       </div>
     </section>
-    <!-- 
+    <!--
   <section id="video" class="video wrapper">
     <div class="container--l">
       <h2 class="title">Video</h2>
